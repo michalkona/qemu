@@ -1,3 +1,11 @@
-Read the documentation in qemu-doc.html or on http://wiki.qemu-project.org
+= Configuring QEMU =
+QEMU must be configured to build on the Linux host. This can be accomplished using the following command line.
 
-- QEMU team
+$ ./configure --python=/bin/python2 --target-list="aarch64-softmmu,microblazeel-softmmu" --enable-fdt --disable-kvm
+
+= Building QEMU =
+The following command line builds QEMU to run on the host computer.
+$ make
+
+
+Read the documentation on http://www.wiki.xilinx.com/QEMU
